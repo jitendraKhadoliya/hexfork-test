@@ -22,15 +22,15 @@ const HiringSection = () => {
     // Add other query parameters as required
   };
 
-  const { data, isLoading, error } = useDataFetcher(URL, header, query);
+  // const { data, isLoading, error } = useDataFetcher(URL, header, query);
 
-  if (isLoading) {
-    return <Loader />;
-  }
+  // if (isLoading) {
+  //   return <Loader />;
+  // }
 
-  if (error) {
-    return <Error error={error} />;
-  }
+  // if (error) {
+  //   return <Error error={error} />;
+  // }
 
   // if (!data.length) {
   //   return null;
@@ -45,7 +45,7 @@ const HiringSection = () => {
   return (
     <div>
       <p className="hiring-subHeading">
-        Open Positions <span>{data?.data?.length || 17} </span>
+        Open Positions <span>{17} </span>
       </p>
       <div className="input-section">
         <div className="first-Input">
@@ -78,8 +78,8 @@ const HiringSection = () => {
       </div>
       <hr className="hr" />
 
-      <div>
-        {/* Use the fetched data here */}
+      {/* Use the fetched data here */}
+      {/* <div>
         {data?.data && (
           <ul className="job-table">
             <div className="table-section job-row table-heading">
@@ -103,7 +103,7 @@ const HiringSection = () => {
             ))}
           </ul>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

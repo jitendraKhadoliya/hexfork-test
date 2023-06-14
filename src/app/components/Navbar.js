@@ -90,14 +90,12 @@ const Navbar = () => {
       }
     };
 
-
     // window.addEventListener("scroll", handleScroll);
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
       // window.removeEventListener("scroll", handleScroll);
-      document.removeEventListener('mousedown', handleClickOutside);
-
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [openMobileDropdown]);
 
@@ -105,9 +103,11 @@ const Navbar = () => {
 
   return (
     <>
-
-      <div className={` fixed flex items-center justify-between px-2 md:px-5 md:z-10 h-20 w-full ${true ? 'bg-black' : 'bg-transparent'}`}>
-
+      <div
+        className={` fixed flex items-center z-10 justify-between px-2 z-1 sm:z-10  md:px-5 md:z-10 h-20 w-full ${
+          true ? "bg-black" : "bg-transparent"
+        }`}
+      >
         <div className="flex">
           <div className={`${openMobileDropdown ? "hidden" : ""}`}>
             <div

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import { Modal } from "../components/ModalO";
@@ -21,10 +21,23 @@ function Page() {
           <div className="col-6 home-container me-0 pe-0">
             <div className="home-text-section">
               <div className="content">
-                <h1 style={{ fontFamily: "Roboto, sans-serif",fontSize: "50px" }}>Welcome.</h1>
+                <h1
+                  style={{ fontFamily: "Roboto, sans-serif", fontSize: "50px" }}
+                >
+                  Welcome.
+                </h1>
               </div>
               <p className="primary-text">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                Welcome to our website! With Hexfork, you can effortlessly
+                create and schedule online meetings that fit seamlessly into
+                your busy schedule. Say goodbye to the hassle of coordinating
+                multiple calendars and time zones. Our user-friendly platform
+                empowers you to set up virtual meetings with just a few clicks,
+                ensuring smooth communication and collaboration. Whether you are
+                managing a team, conducting client presentations, or hosting
+                webinars, Hexfork streamlines the process, allowing you to focus
+                on what truly matters. Experience the convenience of online
+                meetings with Hexfork today!
               </p>
               <div className="home-btn-section">
                 {/* <Button title="Website"></Button> */}

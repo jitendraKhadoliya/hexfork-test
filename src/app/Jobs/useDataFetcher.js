@@ -88,7 +88,7 @@ const useDataFetcher = (url, headers, query) => {
     };
 
     fetchData();
-  }, []);
+  });
 
   return { data, isLoading, error };
 };

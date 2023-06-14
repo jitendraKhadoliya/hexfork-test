@@ -9,8 +9,8 @@ import city from "./city.jpg";
 import laptop from "./laptop.jpg";
 import meeting from "./meeting.jpg";
 import team from "./team.png";
-import HiringSection from "./HiringSection.js";
 import "./page.css";
+import HiringSection from "./HiringSection";
 
 const page = () => {
   return (
