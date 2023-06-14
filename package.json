@@ -37,5 +37,8 @@
     "tailwindcss": "3.3.2",
     "tsparticles": "^2.9.3",
     "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "postcss-nesting": "^11.3.0"
   }
 }
