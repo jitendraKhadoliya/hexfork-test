@@ -17,28 +17,33 @@
 //   },
 // };
 
-import postcssNested from "postcss-nested";
 // postcss.config.js
-export const plugins = {
-  "postcss-import": {},
-  "tailwindcss/nesting": {},
-  tailwindcss: {},
-  autoprefixer: {},
+module.exports = {
+  plugins: {
+    "postcss-import": {},
+    "tailwindcss/nesting": {},
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 };
 // postcss.config.js
-// export const plugins = {
-//   "postcss-import": {},
-//   "tailwindcss/nesting": "postcss-nesting",
-//   tailwindcss: {},
-//   autoprefixer: {},
+// module.exports = {
+//   plugins: {
+//     "postcss-import": {},
+//     "tailwindcss/nesting": "postcss-nesting",
+//     tailwindcss: {},
+//     autoprefixer: {},
+//   },
 // };
 
 // // postcss.config.js
-// export const plugins = {
-//   "postcss-import": {},
-//   "tailwindcss/nesting": "postcss-nesting",
-//   tailwindcss: {},
-//   "postcss-preset-env": {
-//     features: { "nesting-rules": false },
+// module.exports = {
+//   plugins: {
+//     "postcss-import": {},
+//     "tailwindcss/nesting": "postcss-nesting",
+//     tailwindcss: {},
+//     "postcss-preset-env": {
+//       features: { "nesting-rules": false },
+//     },
 //   },
 // };
