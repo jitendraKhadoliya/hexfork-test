@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const postcssNested = require("postcss-nested");
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,7 +18,7 @@ module.exports = {
   },
   plugins: [
     require("postcss-import"),
-    require("tailwindcss/nesting"),
+    postcssNested,
     require("tailwindcss"),
     require("autoprefixer"),
   ],
