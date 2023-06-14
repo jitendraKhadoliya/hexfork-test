@@ -1,0 +1,312 @@
+.li ul {
+    margin-bottom: 0;
+}
+
+
+
+.sub-li {
+    list-style-type: circle;
+}
+
+em {
+    font-style: italic;
+}
+
+.li {
+    list-style-type: disc;
+}
+
+
+.li {
+    margin: 0;
+    padding: 0;
+    list-style-position: outside;
+    margin-left: 2em;
+}
+
+.prose li {
+    margin-left: 25px;
+    padding-left: 20px;
+}
+
+
+@media screen and (min-width: 550px) {
+    .text-hero__heading {
+        margin-top: 20px;
+    }
+}
+
+.text-hero__heading:first-child {
+    margin-top: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 960px) {
+    .heading--4 {
+        font-size: 2.75rem;
+        line-height: 1.227;
+    }
+}
+
+.heading--light {
+    color: #e7e6e3;
+}
+
+.text-hero__heading {
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.heading {
+    font-family: 'Mark Pro', Arial, sans-serif;
+    color: #2b2a29;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    white-space: pre-wrap;
+}
+
+.heading--4 {
+    font-weight: 800;
+    letter-spacing: .01em;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 550px) {
+    .heading--4 {
+        font-size: 2.25rem;
+        line-height: 1.278;
+    }
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mark Pro', Arial, sans-serif;
+    font-weight: 700;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.prose ul {
+    display: table;
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 960px) {
+    .prose h2 {
+        font-size: 1.75rem;
+        line-height: 1.357;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .prose h2 {
+        margin-top: 50%;
+    }
+}
+
+.prose h2 {
+    font-size: 2.125rem;
+    line-height: 1.333;
+}
+
+@media screen and (min-width: 550px) {
+    .prose h2 {
+        font-size: 1.625rem;
+        line-height: 1.231;
+    }
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mark Pro', Arial, sans-serif;
+    font-weight: 700;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.prose>*+* {
+    margin-top: 20px;
+}
+
+.prose h2 {
+    font-family: 'Mark Pro', Arial, sans-serif;
+    font-weight: 900;
+    color: rgb(30, 173, 255);
+    text-align:center;
+    margin-top: 30px;
+}
+
+.content-center:after,
+.content-center:before {
+    content: "";
+    display: table;
+}
+
+.content-center:after {
+    clear: both;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.prose> :first-child {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 960px) {
+    .copy {
+        font-size: 1.125rem;
+        line-height: 1.667;
+    }
+}
+
+.copy--large {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 550px) {
+    .copy--large {
+        font-size: 1.125rem;
+        line-height: 1.667;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .copy--large {
+        font-size: 1.375rem;
+        line-height: 1.636;
+    }
+}
+
+.content-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.content-center--8-12 {
+    max-width: 953.333px;
+}
+
+.content-gutter {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 550px) {
+    .content-gutter {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.copy {
+    font-family: 'Mark Pro', Arial, sans-serif;
+    color: #2b2a29;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e7e6e3;
+    font-weight: 400;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.about-img {
+    height: 55vh;
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+}
+
+
+.main {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Mark Pro',
+        Arial,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 960px) {
+    .flexbox body {
+        min-height: 100vh;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (min-width: 960px) {
+    .main {
+        min-height: 25rem;
+    }
+
+    .flexbox .main {
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+}
+
+.main {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: center;
+    background-color: #e7e6e3;
+    color: #2b2a29;
+}
+
+
+
+@media screen and (max-width: 633px) {
+    .about-img {
+        height: 40vh;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .-img {
+        height: 30vh;
+    }
+}

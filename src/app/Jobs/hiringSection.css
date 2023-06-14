@@ -1,0 +1,144 @@
+.input-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.first-Input {
+    font-size: 1.25rem;
+    color: #8a8887;
+    font-weight: 600;
+    padding-left: 0;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.job-search {
+    height: 40px;
+    padding: 8px 30px 8px 20px;
+    font-size: .875rem;
+    line-height: 1.714;
+}
+
+.control--text {
+    display: block;
+    width: 100%;
+    border: 2px solid #dbd9d6;
+    font-family: 'Mark Pro', Arial, sans-serif;
+    font-weight: 700;
+    color: #2b2a29;
+    background-color: #dbd9d6;
+    transition: border-color .4s ease-out;
+    border-radius: 50px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 4px;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-select {
+    font-size: 1rem;
+    background-color: #dbd9d6;
+    height: 100%;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+
+}
+
+.second-input {
+    display: flex;
+    gap: 10px;
+}
+
+.hr {
+    border-bottom: 2px solid #c5c5c3;
+}
+
+.job-table {
+    margin: 40px 0;
+    font-family: 'Mark Pro', Arial, sans-serif;
+
+}
+
+.table-heading {
+    color: #b91c1c;
+    background-color: #e2e1de;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 20px !important;
+}
+
+.table-section {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    min-height: 55px;
+    margin: 20px 0px;
+    padding: 0 20px;
+}
+
+.table-section:hover {
+    .item-job-title {
+        border-bottom: 2.5px solid #b91c1c;
+    }
+}
+
+
+.job-row:nth-child(odd) {
+    background-color: #e2e1de;
+}
+
+
+@media screen and (max-width: 768px) {
+    .input-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .first-Input {
+        width: 100%;
+    }
+
+    .table-section {
+        grid-template-columns: 2.5fr 1fr 1fr 0.6fr;
+        gap: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 661px) {
+    .input-section {
+        width: 100%;
+    }
+
+    .first-Input {
+        width: 100%;
+    }
+
+    .second-input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .table-section {
+        grid-template-columns: 2fr 1fr 1fr 0.5fr;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+}

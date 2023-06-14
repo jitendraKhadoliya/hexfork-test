@@ -1,0 +1,24 @@
+body{
+  /* background-color: rgb(25, 25, 25); */
+  background-image: linear-gradient(to right, black 35%, rgb(225, 59, 59));
+  color: whitesmoke;
+}
+.home-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+  margin-left: 2vw;
+}
+
+.home-text-section h1,
+.home-text-section p {
+  text-align: left;
+}
+.content{
+  margin-left: 2.5vh;
+}
+.primary-text{
+  margin-left: 2.5vh;
+}
