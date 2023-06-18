@@ -1,13 +1,13 @@
 'use client';
-import React, { useState } from "react";
-import { styled } from "styled-components";
-import { LoginForm } from "./loginForm";
-import { motion } from "framer-motion";
-import { AccountContext } from "./accountContext.js";
-import { SignupForm } from "./signupForm";
-import { SocialContainer } from "./socialContainer/SocialContainer"
-import './login.css'
-import RootLayout from "../layout";
+import React, { useState } from 'react';
+import { styled } from 'styled-components';
+import { LoginForm } from './loginForm';
+import { motion } from 'framer-motion';
+import { AccountContext } from './accountContext.js';
+import { SignupForm } from './signupForm';
+import { SocialContainer } from './socialContainer/SocialContainer';
+import './login.css';
+import RootLayout from '../layout';
 
 const BoxContainer = styled.div`
   width: 280px;
@@ -42,11 +42,7 @@ const BackDrop = styled(motion.div)`
   top: -290px;
   left: -70px;
   background: orangered;
-  background: linear-gradient(
-    58deg,
-    #ff4b28 40%,
-    #ff228c 100%
-  );
+  background: linear-gradient(58deg, #ff4b28 40%, #ff228c 100%);
 `;
 
 const HeaderContainer = styled.div`
@@ -82,32 +78,32 @@ const InnerContainer = styled.div`
 
 const backdropVariants = {
   expanded: {
-    width: "233%",
-    height: "1050px",
-    borderRadius: "20%",
-    transform: "rotate(60deg)",
+    width: '233%',
+    height: '1050px',
+    borderRadius: '20%',
+    transform: 'rotate(60deg)',
   },
   collapsed: {
-    width: "160%",
-    height: "550px",
-    borderRadius: "50%",
-    transform: "rotate(60deg)",
+    width: '160%',
+    height: '550px',
+    borderRadius: '50%',
+    transform: 'rotate(60deg)',
   },
 };
 
 const expandingTransition = {
-  type: "spring",
+  type: 'spring',
   duration: 2.3,
   stiffness: 30,
 };
 
 export default function AccountBox(props) {
   const [isExpanded, setExpanded] = useState(false);
-  const [active, setActive] = useState("signin");
+  const [active, setActive] = useState('signin');
 
   const handleSignin = () => {
-    setActive("signin");
-  }
+    setActive('signin');
+  };
 
   const playExpandingAnimation = () => {
     setExpanded(true);
@@ -119,14 +115,14 @@ export default function AccountBox(props) {
   const switchToSignup = () => {
     playExpandingAnimation();
     setTimeout(() => {
-      setActive("signup");
+      setActive('signup');
     }, 400);
   };
 
   const switchToSignin = () => {
     playExpandingAnimation();
     setTimeout(() => {
-      setActive("signin");
+      setActive('signin');
     }, 400);
   };
 
@@ -141,18 +137,18 @@ export default function AccountBox(props) {
             <TopContainer>
               <BackDrop
                 initial={false}
-                animate={isExpanded ? "expanded" : "collapsed"}
+                animate={isExpanded ? 'expanded' : 'collapsed'}
                 variants={backdropVariants}
                 transition={expandingTransition}
               />
-              {active === "signin" && (
+              {active === 'signin' && (
                 <HeaderContainer>
                   <HeaderText>Welcome</HeaderText>
                   <HeaderText>Back</HeaderText>
                   <SmallText>Please sign-in to continue!</SmallText>
                 </HeaderContainer>
               )}
-              {active === "signup" && (
+              {active === 'signup' && (
                 <HeaderContainer>
                   <HeaderText>Create</HeaderText>
                   <HeaderText>Account</HeaderText>
@@ -161,11 +157,11 @@ export default function AccountBox(props) {
               )}
             </TopContainer>
             <InnerContainer>
-              {active === "signin" && <LoginForm />}
-              {active === "signup" && <SignupForm />}
+              {active === 'signin' && <LoginForm />}
+              {active === 'signup' && <SignupForm />}
             </InnerContainer>
             {/* Social Container */}
-            <SocialContainer style={{ margin: "0 auto" }} />
+            <SocialContainer style={{ margin: '0 auto' }} />
           </BoxContainer>
         </div>
       </AccountContext.Provider>

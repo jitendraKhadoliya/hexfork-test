@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useCallback } from "react";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import Modal from "./components/Modal";
+import { useCallback } from 'react';
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
+import Modal from './components/Modal';
 
 export default function Home() {
   const particlesInit = useCallback(async (engine) => {
@@ -29,7 +29,7 @@ export default function Home() {
           options={{
             background: {
               color: {
-                value: "#000",
+                value: '#000',
               },
             },
             fpsLimit: 120,
@@ -37,11 +37,11 @@ export default function Home() {
               events: {
                 onClick: {
                   enable: true,
-                  mode: "push",
+                  mode: 'push',
                 },
                 onHover: {
                   enable: false,
-                  mode: "repulse",
+                  mode: 'repulse',
                 },
                 resize: true,
               },
@@ -57,10 +57,10 @@ export default function Home() {
             },
             particles: {
               color: {
-                value: "#ff5757",
+                value: '#ff5757',
               },
               links: {
-                color: "#ff5757",
+                color: '#ff5757',
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
@@ -70,10 +70,10 @@ export default function Home() {
                 enable: true,
               },
               move: {
-                directions: "none",
+                directions: 'none',
                 enable: true,
                 outModes: {
-                  default: "bounce",
+                  default: 'bounce',
                 },
                 random: true,
                 speed: 1,
@@ -90,7 +90,7 @@ export default function Home() {
                 value: 0.5,
               },
               shape: {
-                type: "circle",
+                type: 'circle',
               },
               size: {
                 value: { min: 1, max: 5 },
@@ -101,11 +101,11 @@ export default function Home() {
         />
         <div className="flex items-center justify-center ">
           <h1 className="text-7xl text-center font-bold w-2/3 my-80 text-white">
-            The Next Generation{" "}
+            The Next Generation{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
-              {" "}
+              {' '}
               Blockchain
-            </span>{" "}
+            </span>{' '}
             Technology
           </h1>
         </div>

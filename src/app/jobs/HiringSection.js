@@ -1,24 +1,24 @@
-import React, { useState } from "react";
-import useDataFetcher from "./useDataFetcher";
-import "./hiringSection.css";
-import Error from "../components/Error";
-import Loader from "../components/Loader";
+import React, { useState } from 'react';
+import useDataFetcher from './useDataFetcher';
+import './hiringSection.css';
+import Error from '../components/Error';
+import Loader from '../components/Loader';
 
 const HiringSection = () => {
-  const URL = "https://jsearch.p.rapidapi.com/search";
+  const URL = 'https://jsearch.p.rapidapi.com/search';
   // "9bc77343fbmsh484d6da408e357fp189298jsn5a23f55737bc",
   // "db318a4383mshb1c5484dfa90ad2p19cc3bjsncec110ea7035",
   // 7c83bf8165msh1d3a4bad1544e03p173d00jsn058027120f5f
   // 0af1ed6078msh0b162e7633687b2p1628f5jsn840c3e566c04
 
   const header = {
-    "X-RapidAPI-Key": "9bc77343fbmsh484d6da408e357fp189298jsn5a23f55737bc",
-    "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
+    'X-RapidAPI-Key': '9bc77343fbmsh484d6da408e357fp189298jsn5a23f55737bc',
+    'X-RapidAPI-Host': 'jsearch.p.rapidapi.com',
   };
 
   const query = {
-    query: "javascript",
-    num_pages: "2",
+    query: 'javascript',
+    num_pages: '2',
     // Add other query parameters as required
   };
 

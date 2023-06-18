@@ -9,7 +9,7 @@ const userGroupsSlice = createSlice({
       state.push(action.payload);
     },
     removeUserGroup: (state, action) => {
-      return state.filter(group => group.id !== action.payload);
+      return state.filter((group) => group.id !== action.payload);
     },
   },
 });

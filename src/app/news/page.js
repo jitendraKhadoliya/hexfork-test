@@ -1,12 +1,12 @@
-import React from "react";
-import axios from "axios";
-import Link from "next/link";
-import "./page.css";
-import Image from "next/image";
+import React from 'react';
+import axios from 'axios';
+import Link from 'next/link';
+import './page.css';
+import Image from 'next/image';
 
 async function getArticles() {
   const res = await axios.get(
-    "https://strapi-demo-p4qt.onrender.com/api/articles?populate=*"
+    'https://strapi-demo-p4qt.onrender.com/api/articles?populate=*'
   );
 
   return res.data.data;

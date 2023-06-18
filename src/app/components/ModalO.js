@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import Calendar from './calender';
-import './modal.css'
+import './modal.css';
 import Button from './Button';
 import UserForm from './UserForm';
 // import { set } from "date-fns";
@@ -59,31 +58,34 @@ export const Modal = ({ showModal, setShowModal }) => {
   const [showUserForm, setShowUserForm] = useState(false);
 
   const handleNext = () => {
-      setShowUserForm(true);
+    setShowUserForm(true);
   };
 
   return (
-      <>
-          {showModal ? (
-              <Background>
-                  <ModalWrapper showModal={showModal}>
-                      <ModalContent>
-                          <CloseModalButton aria-label='Close modal' onClick={() => setShowModal(prev => !prev)} />
-                          {!showUserForm ? (
-                              <>
-                                  <Calendar />
-                                  <Button title="Next" onClick={handleNext} />
-                              </>
-                          ) : (
-                              <UserForm showUserForm={showUserForm} setShowUserForm={setShowUserForm} />
-                          )}
-                      </ModalContent>
-                  </ModalWrapper>
-              </Background>
-          ) : null}
-      </>
+    <>
+      {showModal ? (
+        <Background>
+          <ModalWrapper showModal={showModal}>
+            <ModalContent>
+              <CloseModalButton
+                aria-label="Close modal"
+                onClick={() => setShowModal((prev) => !prev)}
+              />
+              {!showUserForm ? (
+                <>
+                  <Calendar />
+                  <Button title="Next" onClick={handleNext} />
+                </>
+              ) : (
+                <UserForm
+                  showUserForm={showUserForm}
+                  setShowUserForm={setShowUserForm}
+                />
+              )}
+            </ModalContent>
+          </ModalWrapper>
+        </Background>
+      ) : null}
+    </>
   );
 };
-
-
-

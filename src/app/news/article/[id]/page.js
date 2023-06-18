@@ -1,8 +1,8 @@
-import React from "react";
-import axios from "axios";
+import React from 'react';
+import axios from 'axios';
 
-import "./index.css";
-import Image from "next/image";
+import './index.css';
+import Image from 'next/image';
 
 const Article = async ({ params }) => {
   // const { id } = useParams()

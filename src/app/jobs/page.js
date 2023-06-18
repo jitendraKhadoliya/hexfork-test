@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import hiring from "./hiring.png";
-import audience from "./audience.jpg";
-import blockchain from "./blockchain.jpg";
-import city from "./city.jpg";
-import laptop from "./laptop.jpg";
-import meeting from "./meeting.jpg";
-import team from "./team.png";
-import "./page.css";
-import HiringSection from "./HiringSection";
+import Image from 'next/image';
+import React from 'react';
+import hiring from './hiring.png';
+import audience from './audience.jpg';
+import blockchain from './blockchain.jpg';
+import city from './city.jpg';
+import laptop from './laptop.jpg';
+import meeting from './meeting.jpg';
+import team from './team.png';
+import './page.css';
+import HiringSection from './HiringSection';
 
 const page = () => {
   return (
@@ -25,7 +25,7 @@ const page = () => {
           alt="hiring-img"
           width={355}
           height={10}
-          style={{ margin: "auto" }}
+          style={{ margin: 'auto' }}
         />
       </div>
       <h2 className="hiring-desc">

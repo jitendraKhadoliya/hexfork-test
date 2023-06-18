@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
-    .filter-drop-shadow {
-      filter: drop-shadow(0 0 0.20rem rgb(248, 0, 0));
-    }
-
-    .filter-shadow {
-      filter: drop-shadow(0 0 0.20rem rgb(30, 27, 27));
-    }
+  .filter-drop-shadow {
+    filter: drop-shadow(0 0 0.2rem rgb(248, 0, 0));
   }
-  
+
+  .filter-shadow {
+    filter: drop-shadow(0 0 0.2rem rgb(30, 27, 27));
+  }
+}

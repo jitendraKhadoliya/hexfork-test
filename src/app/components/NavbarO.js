@@ -1,8 +1,8 @@
-import React from "react";
-import hexforkLogo from "./hexfork-white2.png";
-import hexforkLogo2 from "./Hexfork-white3.png";
-import "./Navbar.css";
-import Image from "next/image";
+import React from 'react';
+import hexforkLogo from './hexfork-white2.png';
+import hexforkLogo2 from './Hexfork-white3.png';
+import './Navbar.css';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (

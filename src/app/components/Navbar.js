@@ -1,24 +1,24 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 import React, {
   useState,
   useRef,
   useEffect,
   RefObject,
   MouseEventHandler,
-} from "react";
-import { FiGlobe, FiSearch } from "react-icons/fi";
+} from 'react';
+import { FiGlobe, FiSearch } from 'react-icons/fi';
 import {
   RxTriangleDown,
   RxTriangleUp,
   RxTriangleRight,
   RxTriangleLeft,
-} from "react-icons/rx";
-import DropdownButton from "./DropdownButton";
-import DropdownButtonMobile from "./DropdownButtonMobile";
-import Modal from "./Modal";
-import "../globals.css";
-import { FaBars, FaTimes } from "react-icons/fa";
+} from 'react-icons/rx';
+import DropdownButton from './DropdownButton';
+import DropdownButtonMobile from './DropdownButtonMobile';
+import Modal from './Modal';
+import '../globals.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 // const useOnClickOutside = (ref, handler) => {
 //   useEffect(() => {
@@ -38,29 +38,29 @@ import { FaBars, FaTimes } from "react-icons/fa";
 //   }, [ref, handler]);
 // };
 
-const aboutList = ["About HexFork", "Social Impact"];
-const aboutDropdownLinks = ["/about", ""];
+const aboutList = ['About HexFork', 'Social Impact'];
+const aboutDropdownLinks = ['/about', ''];
 const careerList = [
-  "Jobs",
-  "Benefits",
-  "Offices",
-  "Life at HexFork",
-  "Partners",
-  "Services",
+  'Jobs',
+  'Benefits',
+  'Offices',
+  'Life at HexFork',
+  'Partners',
+  'Services',
 ];
 const careerDropdownLinks = [
-  "/jobs",
-  "/benefits",
-  "/",
-  "/",
-  "/partner",
-  "/services",
+  '/jobs',
+  '/benefits',
+  '/',
+  '/',
+  '/partner',
+  '/services',
 ];
 
 const logolist = [
-  { name: "Home", link: "/" },
-  { name: "Schedule a Meeting", link: "/meetings" },
-  { name: "Admin Panel", link: "/admin" },
+  { name: 'Home', link: '/' },
+  { name: 'Schedule a Meeting', link: '/meetings' },
+  { name: 'Admin Panel', link: '/admin' },
 ];
 
 const Navbar = () => {
@@ -91,11 +91,11 @@ const Navbar = () => {
     };
 
     // window.addEventListener("scroll", handleScroll);
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
       // window.removeEventListener("scroll", handleScroll);
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [openMobileDropdown]);
 
@@ -105,11 +105,11 @@ const Navbar = () => {
     <>
       <div
         className={` fixed flex items-center z-10 justify-between px-2 z-1 sm:z-10  md:px-5 md:z-10 h-20 w-full ${
-          true ? "bg-black" : "bg-transparent"
+          true ? 'bg-black' : 'bg-transparent'
         }`}
       >
         <div className="flex">
-          <div className={`${openMobileDropdown ? "hidden" : ""}`}>
+          <div className={`${openMobileDropdown ? 'hidden' : ''}`}>
             <div
               className="bg-transparent"
               onMouseEnter={() => setIsOpen(true)}
@@ -117,7 +117,7 @@ const Navbar = () => {
             >
               <Image
                 className={`cursor-pointer ease-in-out duration-500 ${
-                  isOpen ? "scale-110 filter-drop-shadow" : ""
+                  isOpen ? 'scale-110 filter-drop-shadow' : ''
                 }  `}
                 src="/white_logo.png"
                 alt="logo"
@@ -148,14 +148,14 @@ const Navbar = () => {
           <ul className="flex items-center justify-start space-x-4">
             <li className="lg:ml-3">
               <DropdownButton
-                name={"Who We Are"}
+                name={'Who We Are'}
                 items={aboutList}
                 links={aboutDropdownLinks}
               />
             </li>
             <li className=" z-1">
               <DropdownButton
-                name={"Work with Us"}
+                name={'Work with Us'}
                 items={careerList}
                 links={careerDropdownLinks}
               />
@@ -173,7 +173,7 @@ const Navbar = () => {
 
         <div
           className={`flex lg:justify-end justify-center ${
-            openMobileDropdown ? "hidden" : ""
+            openMobileDropdown ? 'hidden' : ''
           }`}
         >
           <div className="flex justify-center items-center">
@@ -277,16 +277,16 @@ const Navbar = () => {
       <div
         className={
           openMobileDropdown
-            ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur z-10"
-            : ""
+            ? 'md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur z-10'
+            : ''
         }
       >
         <div
           ref={navbarRef}
           className={
             openMobileDropdown
-              ? "fixed z-12 left-0 top-0 w-3/5 rounded-3xl h-full bg-gradient-to-r from-red-900 to-gray-900 text-white p-5 ease-in duration-500"
-              : "fixed top-0 left-[-100%] p-10 h-full ease-in-out duration-500"
+              ? 'fixed z-12 left-0 top-0 w-3/5 rounded-3xl h-full bg-gradient-to-r from-red-900 to-gray-900 text-white p-5 ease-in duration-500'
+              : 'fixed top-0 left-[-100%] p-10 h-full ease-in-out duration-500'
           }
         >
           <div>

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { ScheduleMeeting } from "react-schedule-meeting";
-import "./ScheduleMeeting.css";
-import format from "date-fns/format";
+import React, { useState } from 'react';
+import { ScheduleMeeting } from 'react-schedule-meeting';
+import './ScheduleMeeting.css';
+import format from 'date-fns/format';
 let e1;
 let e2;
 
@@ -22,20 +22,18 @@ const Calendar = () => {
     setSelectedTimeSlot(timeSlot);
   };
   const handleTimeslotClicked = (startTimeEventEmit) => {
-
-    const example = format(startTimeEventEmit.startTime, "LLLL do, h:mm a");
+    const example = format(startTimeEventEmit.startTime, 'LLLL do, h:mm a');
     example.toString();
-    e1 = example.split(",")[0].trim();
-    e2 = example.split(",")[1].trim();
+    e1 = example.split(',')[0].trim();
+    e2 = example.split(',')[1].trim();
     console.log(e1, e2);
     return { e1, e2 };
-
   };
   return (
     // <> {showCalendar? (
     <div className="schedule-meeting-container">
       <ScheduleMeeting
-      borderRadius={10}
+        borderRadius={10}
         className="schedule-meeting-calendar"
         onTimeSlotClick={handleTimeSlotClick}
         primaryColor="#e84d4d"
@@ -53,6 +51,5 @@ const Calendar = () => {
     // </>
   );
 };
-export { e1, e2 }
+export { e1, e2 };
 export default Calendar;
-

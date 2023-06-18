@@ -1,4 +1,4 @@
-.footer__navigation a{
+.footer__navigation a {
   display: inline-block;
   padding: 10px;
   font-size: 11px;
@@ -12,17 +12,17 @@
   text-transform: uppercase;
   justify-content: space-between;
   padding-top: 30px;
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 .list--unstyled {
   margin-bottom: 0;
 }
 
-.list--unstyled>li {
+.list--unstyled > li {
   list-style: none;
   margin-left: 0;
 }
-.list--inline>li {
+.list--inline > li {
   display: inline-block;
   margin-left: 0;
 }
@@ -36,10 +36,10 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url(/distressed-stroke.svg) ;
+  background-image: url(/distressed-stroke.svg);
   background-repeat: repeat-x;
   background-position: 50% 50%;
-  background-size: 420px 2px
+  background-size: 420px 2px;
 }
 
 .lower-footer {
@@ -53,7 +53,7 @@
   margin: 0 40px;
   text-decoration: none;
   padding-top: 30px;
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 
 .footer__cookie {
@@ -67,17 +67,16 @@
   display: block;
 }
 .move_top {
-margin-left: auto;
-font-weight: 500;
-
+  margin-left: auto;
+  font-weight: 500;
 }
-.move_top:hover{
-color: #d1363a;
+.move_top:hover {
+  color: #d1363a;
 }
 .monospace {
-color: #d1363a;
-letter-spacing: .025em;
-font-size: .75rem;
-line-height: 1.667;
-font-family: 'Eco Coding W02 WGL4',monospace
+  color: #d1363a;
+  letter-spacing: 0.025em;
+  font-size: 0.75rem;
+  line-height: 1.667;
+  font-family: 'Eco Coding W02 WGL4', monospace;
 }

@@ -1,7 +1,7 @@
-import React from "react";
-import "./benefits.css";
-import Image from "next/image";
-import benefitImage from "./benefits.jpg";
+import React from 'react';
+import './benefits.css';
+import Image from 'next/image';
+import benefitImage from './benefits.jpg';
 const page = () => {
   return (
     <>
@@ -168,6 +168,7 @@ const page = () => {
                     </li>
                   </ul>
                   <p dir="ltr" role="presentation">
+                    {' '}
                     &nbsp;
                   </p>
                 </div>

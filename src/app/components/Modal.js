@@ -1,8 +1,8 @@
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
-import "./modal.css";
-import { RxCross2 } from "react-icons/rx";
+import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
+import './modal.css';
+import { RxCross2 } from 'react-icons/rx';
 
 const Modal = ({ updateModal }) => {
   const handleButtonClick = () => {
@@ -49,14 +49,14 @@ const Modal = ({ updateModal }) => {
         >
           <motion.div>
             <ul
-              style={{ listStyleType: "none" }}
+              style={{ listStyleType: 'none' }}
               className="flex items-start justify-evenly flex-col"
             >
               <li>
                 <Link
                   href="/meetings"
                   onClick={handleButtonClick}
-                  style={{ padding: "10px", margin: "20px" }}
+                  style={{ padding: '10px', margin: '20px' }}
                   className="dropdown"
                 >
                   Schedule a meeting
@@ -67,7 +67,7 @@ const Modal = ({ updateModal }) => {
                 <Link
                   href="/admin"
                   onClick={handleButtonClick}
-                  style={{ padding: "10px", margin: "20px" }}
+                  style={{ padding: '10px', margin: '20px' }}
                   className="dropdown"
                 >
                   Admin Panel

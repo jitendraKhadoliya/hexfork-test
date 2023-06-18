@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { Modal } from "../components/ModalO";
-import Button from "../components/Button";
-import Navbar from "../components/Navbar";
-import "./page.css";
+import React, { useState } from 'react';
+import { Modal } from '../components/ModalO';
+import Button from '../components/Button';
+import Navbar from '../components/Navbar';
+import './page.css';
 
 function Page() {
   const [showModal, setShowModal] = useState(false);
@@ -22,7 +22,7 @@ function Page() {
             <div className="home-text-section">
               <div className="content">
                 <h1
-                  style={{ fontFamily: "Roboto, sans-serif", fontSize: "50px" }}
+                  style={{ fontFamily: 'Roboto, sans-serif', fontSize: '50px' }}
                 >
                   Welcome.
                 </h1>

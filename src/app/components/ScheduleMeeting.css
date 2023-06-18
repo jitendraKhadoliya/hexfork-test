@@ -1,55 +1,55 @@
 .schedule-meeting-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.schedule-meeting-calendar {
+  width: 100%;
+  max-width: 800px;
+  overflow-x: auto;
+  color: #e84d4d;
+}
+
+.schedule-meeting-time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.time-slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-slot {
+  background-color: #e84d4d;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-meeting-container {
+    padding: 10px;
   }
-  
+
   .schedule-meeting-calendar {
-    width: 100%;
-    max-width: 800px;
-    overflow-x: auto;
-    color: #e84d4d;
+    max-width: 100%;
   }
-  
-  .schedule-meeting-time-slots {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    overflow-x: auto;
-  }
-  
+
   .time-slot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
   }
-  
-  .time-slot {
-    background-color: #e84d4d;
-    color: #fff;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .schedule-meeting-container {
-      padding: 10px;
-    }
-  
-    .schedule-meeting-calendar {
-      max-width: 100%;
-    }
-  
-    .time-slot {
-      width: 80px;
-      height: 40px;
-      font-size: 14px;
-    }
-  }
+}

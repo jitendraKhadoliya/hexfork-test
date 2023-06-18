@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
@@ -44,6 +45,7 @@
     "yarn": "^1.22.19"
   },
   "devDependencies": {
-    "postcss-nesting": "^11.3.0"
+    "postcss-nesting": "^11.3.0",
+    "prettier": "2.8.8"
   }
 }

@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import { Provider } from "react-redux";
+import { Provider } from 'react-redux';
 
-import store from "./store/store";
+import store from './store/store';
 
-import UserGroupList from "./components/UserGroupList";
+import UserGroupList from './components/UserGroupList';
 
-import AddUserGroup from "./components/AddUserGroup";
+import AddUserGroup from './components/AddUserGroup';
 
 const App = () => {
-  console.log("Hello world");
+  console.log('Hello world');
   return (
     /*<div>
             <h1>HELLO WORLD</h1>

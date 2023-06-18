@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React from "react";
-import "./error.css";
+import React from 'react';
+import './error.css';
 
 const Error = ({ error }) => {
   return (
@@ -9,7 +9,7 @@ const Error = ({ error }) => {
       <div className="error-container">
         <h1 className="error-text">Error</h1>
         <p className="error-message">
-          {error || "information displayed when an unforeseen problem occurs,"}
+          {error || 'information displayed when an unforeseen problem occurs,'}
           {error}
           usually on a computer or other device.....
         </p>

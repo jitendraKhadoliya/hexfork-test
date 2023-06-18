@@ -1,54 +1,54 @@
 .body-error {
-    /* background: black; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-    margin: 0;
+  /* background: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  margin: 0;
 }
 
 .error-container {
-    background: rgb(255, 255, 255);
-    box-shadow: 10px 10px 10px rgb(81, 80, 80);
-    text-align: center;
-    border: solid white 2px;
-    border-radius: 10px;
-    padding: 20px;
-    width: 600px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px rgb(81, 80, 80);
+  text-align: center;
+  border: solid white 2px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ​.error-text {
-    color: red;
-    font-size: 48px;
-    margin-bottom: 16px;
+  color: red;
+  font-size: 48px;
+  margin-bottom: 16px;
 }
 
 ​.error-message {
-    color: rgb(249, 68, 68);
-    font-size: 24px;
+  color: rgb(249, 68, 68);
+  font-size: 24px;
 }
 
 ​.error-ok {
-    height: 50px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background: rgb(7, 160, 242);
-    border: 2px solid rgb(7, 160, 242);
-    border-radius: 30px;
-    transition: all 0.5s;
-    font-size: 18px;
-    font-weight: 800;
+  height: 50px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: rgb(7, 160, 242);
+  border: 2px solid rgb(7, 160, 242);
+  border-radius: 30px;
+  transition: all 0.5s;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .error-ok:hover {
-    height: 53px;
-    background: rgb(0, 166, 255);
-    box-shadow: 5px 5px 5px gray;
+  height: 53px;
+  background: rgb(0, 166, 255);
+  box-shadow: 5px 5px 5px gray;
 }

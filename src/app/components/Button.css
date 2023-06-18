@@ -1,15 +1,14 @@
 .red-button {
-    background-color: rgb(213, 55, 55);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-  }
-  
-  .red-button:hover {
-    background-color: #ff414d;
-    box-shadow: 0px 4px 10px rgba(255, 138, 138, 0.5);
-  }
-  
+  background-color: rgb(213, 55, 55);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.red-button:hover {
+  background-color: #ff414d;
+  box-shadow: 0px 4px 10px rgba(255, 138, 138, 0.5);
+}

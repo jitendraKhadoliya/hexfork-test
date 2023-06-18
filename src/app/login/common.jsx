@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 export const BoxContainer = styled.div`
   width: 100%;
@@ -65,11 +65,7 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   transition: all, 240ms ease-in-out;
   background: orangered;
-  background: linear-gradient(
-    58deg,
-    #ff4b28 40%,
-    #ff228c 100%
-  );
+  background: linear-gradient(58deg, #ff4b28 40%, #ff228c 100%);
 
   &:hover {
     filter: brightness(1.03);

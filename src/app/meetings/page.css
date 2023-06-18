@@ -1,4 +1,4 @@
-body{
+body {
   /* background-color: rgb(25, 25, 25); */
   background-image: linear-gradient(to right, black 35%, rgb(225, 59, 59));
   color: whitesmoke;
@@ -16,9 +16,9 @@ body{
 .home-text-section p {
   text-align: left;
 }
-.content{
+.content {
   margin-left: 2.5vh;
 }
-.primary-text{
+.primary-text {
   margin-left: 2.5vh;
 }

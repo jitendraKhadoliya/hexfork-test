@@ -2,10 +2,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeUserGroup } from '../store/userGroupsSlice';
-import './UserGroupList.css'; 
+import './UserGroupList.css';
 
 const UserGroupList = () => {
-  const userGroups = useSelector(state => state.userGroups);
+  const userGroups = useSelector((state) => state.userGroups);
   const dispatch = useDispatch();
 
   const handleRemoveUserGroup = (id) => {
@@ -14,10 +14,12 @@ const UserGroupList = () => {
 
   return (
     <ul>
-      {userGroups.map(group => (
+      {userGroups.map((group) => (
         <li key={group.id}>
           {group.name}
-          <button onClick={() => handleRemoveUserGroup(group.id)}>Remove</button>
+          <button onClick={() => handleRemoveUserGroup(group.id)}>
+            Remove
+          </button>
         </li>
       ))}
     </ul>
