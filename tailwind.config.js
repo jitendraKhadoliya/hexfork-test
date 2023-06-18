@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 import postcssNested from "postcss-nested";
 
 module.exports = {
