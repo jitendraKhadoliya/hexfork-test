@@ -46,7 +46,7 @@ const DropdownButton = ({ name, items, links }) => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <ul className="py-2">
+          <ul className="py-2 w-40">
             {items.map((item, index) => (
               <li
                 key={index}

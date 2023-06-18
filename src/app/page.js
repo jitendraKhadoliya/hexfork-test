@@ -100,7 +100,7 @@ export default function Home() {
           }}
         />
         <div className="flex items-center justify-center ">
-          <h1 className="text-7xl text-center font-bold w-2/3 my-80 text-white">
+          <h1 className=" text-5xl text-end w-3/3 font-bold my-80 mr-6 text-white sm:text-7xl sm:text-center sm:w-2/3 sm:mr-0">
             The Next Generation{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
               {' '}

@@ -1,5 +1,10 @@
 .service {
   background-color: black;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1.heading {
@@ -24,8 +29,15 @@ p.heading.p__color {
 
 .container {
   width: 100%;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  /* margin-top: 15px; */
+  /* margin-bottom: 30px; */
+  /* background-color: black; */
+}
+
+.sub-container {
+  padding-top: 35px;
+  padding-bottom: 85px;
+  gap: 10px;
 }
 
 .row {
@@ -85,10 +97,12 @@ h1.service__text {
   .service__box {
     padding: 32px;
   }
+
   .row {
     grid-template-columns: auto auto;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .row {
     grid-template-columns: auto;

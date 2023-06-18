@@ -7,7 +7,7 @@ import React, {
   RefObject,
   MouseEventHandler,
 } from 'react';
-import { FiGlobe, FiSearch } from 'react-icons/fi';
+import { FiSearch } from 'react-icons/fi';
 import {
   RxTriangleDown,
   RxTriangleUp,
@@ -43,16 +43,16 @@ const aboutDropdownLinks = ['/about', ''];
 const careerList = [
   'Jobs',
   'Benefits',
-  'Offices',
-  'Life at HexFork',
+  // 'Offices',
+  // 'Life at HexFork',
   'Partners',
   'Services',
 ];
 const careerDropdownLinks = [
   '/jobs',
   '/benefits',
-  '/',
-  '/',
+  // '/',
+  // '/',
   '/partner',
   '/services',
 ];
@@ -132,7 +132,7 @@ const Navbar = () => {
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
               >
-                <ul className="py-2">
+                <ul className="py-2 ">
                   {logolist.map((item, index) => (
                     <li
                       key={index}
@@ -176,9 +176,9 @@ const Navbar = () => {
             openMobileDropdown ? 'hidden' : ''
           }`}
         >
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <FiGlobe size={34} color="white" className="px-0.5 mt-2" />
-          </div>
+          </div> */}
           <div className="hidden bg-white items-center rounded-full text-sm px-2 py-0.5 lg:flex md:px-5 md:py-2 md:ml-5">
             <input
               type="search"

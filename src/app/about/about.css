@@ -57,7 +57,7 @@ strong {
 }
 
 .heading {
-  font-family: 'Mark Pro', Arial, sans-serif;
+  font-family: "Mark Pro", Arial, sans-serif;
   color: #2b2a29;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -81,7 +81,7 @@ strong {
 h1 {
   margin: 0;
   padding: 0;
-  font-family: 'Mark Pro', Arial, sans-serif;
+  font-family: "Mark Pro", Arial, sans-serif;
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
@@ -124,7 +124,7 @@ ul {
 h2 {
   margin: 0;
   padding: 0;
-  font-family: 'Mark Pro', Arial, sans-serif;
+  font-family: "Mark Pro", Arial, sans-serif;
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
@@ -135,7 +135,7 @@ h2 {
 }
 
 .prose h2 {
-  font-family: 'Mark Pro', Arial, sans-serif;
+  font-family: "Mark Pro", Arial, sans-serif;
   font-weight: 900;
   color: rgb(30, 173, 255);
   text-align: center;
@@ -144,7 +144,7 @@ h2 {
 
 .content-center:after,
 .content-center:before {
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -213,7 +213,7 @@ p {
 }
 
 .copy {
-  font-family: 'Mark Pro', Arial, sans-serif;
+  font-family: "Mark Pro", Arial, sans-serif;
   color: #2b2a29;
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -245,7 +245,7 @@ p {
   margin: 0;
   padding: 0;
   font-size: 1em;
-  font-family: 'Mark Pro', Arial, sans-serif;
+  font-family: "Mark Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

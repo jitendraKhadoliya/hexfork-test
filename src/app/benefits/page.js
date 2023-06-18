@@ -168,7 +168,6 @@ const page = () => {
                     </li>
                   </ul>
                   <p dir="ltr" role="presentation">
-                    {' '}
                     &nbsp;
                   </p>
                 </div>

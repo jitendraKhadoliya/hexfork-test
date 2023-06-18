@@ -3,6 +3,7 @@
   text-align: left;
   width: 200px;
 }
+
 .dropdown:hover {
   background-color: rgba(250, 224, 224, 0.5) !important;
   border-radius: 5px;

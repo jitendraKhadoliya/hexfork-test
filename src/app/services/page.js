@@ -3,7 +3,7 @@ import './page.css';
 
 function Services() {
   return (
-    <div className="service component__space h-full p-40" id="Services">
+    <div className="service component__space h-full " id="Services">
       <div className="heading">
         <h1 className="heading">OUR SERVICES</h1>
         <p className="heading p__color">
@@ -15,7 +15,7 @@ function Services() {
       </div>
 
       <div className="container">
-        <div className="grid row">
+        <div className="grid row sub-container">
           <div className="grid-item col__3">
             <div className="service__box pointer">
               <div className="icon">
